@@ -1,2 +1,7 @@
 server:
   port: 8081
+spring:
+  kafka:
+    consumer:
+      topics: orders_created,orders_confirmed
+      auto-offset-reset: earliest
